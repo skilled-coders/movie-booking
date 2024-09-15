@@ -1,0 +1,106 @@
+.singInContainer {
+    display: flex;
+    height: 100vh;
+    background-color: var(--background-color);
+    justify-content: center;
+    align-items: center;
+
+    .formContainer {
+        width: 450px;
+        margin: 24px;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        border-radius: 10px;
+        padding: 44px 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;
+        color: var(--text-black-primary);
+    }
+
+    .noteWrapper {
+        margin-top: 24px;
+        text-align: center;
+
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            color: var(--text-black-ternery);
+
+            a {
+                color: var(--green-primary);
+                cursor: pointer;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .formElement {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 24px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            color: var(--text-black-secondary);
+        }
+
+        input {
+            padding: 12px 16px 12px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--text-black-ternery);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            color: var(--text-black-secondary);
+            width: calc(100% - 32px);
+        }
+
+        .inputWrapper {
+            position: relative;
+
+            .eyeWrapper {
+                position: absolute;
+                top: 0;
+                right: 16px;
+                height: 42px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .loginButton {
+        background-color: var(--green-primary);
+        border-radius: 8px;
+        padding: 16px;
+        border: none;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: #8dddb5;
+        }
+
+        span {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 16px;
+            color: var(--white);
+        }
+    }
+}
